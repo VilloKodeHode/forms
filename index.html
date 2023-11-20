@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<!--! Fiks denne koden før den vises fram til et annet kurs!  -->
+
+<body>
+  <form action="#" method="post" id="email-collector">
+    <fieldset id="main-content">
+      <legend>Forms 101</legend>
+      <div>
+        <input type="checkbox" name="toggle" id="toggle-grid" />
+        <label for="toogle-grid">Grid toggled</label>
+      </div>
+      <div class="flex">
+        <div class="main-form">
+          <label for="f-name">First name</label>
+          <div>
+            <input type="text" name="first-name" id="name" placeholder="First name" />
+          </div>
+        </div>
+        <div>
+          <label for="l-name" name="Last-name" id="l-name">Last name
+          </label>
+          <div>
+            <input type="text" name="last-name" id="l-name" placeholder="Last name" minlength="2" />
+          </div>
+        </div>
+
+        <div>
+          <label for="e-mail" name="email" id="email">E-mail</label>
+          <div>
+            <input type="email" name="email" id="email" placeholder="E-mail" minlength="2" />
+            <datalist id="default-emails">
+              />
+              <option value="joakim_villo@hotmail.com"></option>
+              <option value="villokodehode@gmail.com"></option>
+            </datalist>
+          </div>
+        </div>
+        <div>
+          <label for="tel">Phone Number</label>
+          <div>
+            <input type="tel" name="phone" id="tel" placeholder="93285044" pattern="[0-9]{3} [0-9]{2} [0-9]{3}"
+              minlength="2" />
+          </div>
+        </div>
+        <button class="btn main-btn" type="submit">
+          Submit form
+        </button>
+        <input type="reset" />
+        <input type="date" name="date" />
+        <input type="color" />
+        <input type="file" />
+        <input type="password" />
+        <input type="search" placeholder="search" />
+
+        <label for="cars">Choose your car</label>
+        <select name="cars" id="cars">
+          <option value="Volvo">Volvo</option>
+          <option value="BMW">BMW</option>
+          <option value="Nissan">Nissan</option>
+        </select>
+        <p>"Vi deler ikke info med noen"
+          -Absolutely no-one</p>
+      </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>

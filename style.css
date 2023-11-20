@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+legend {
+  padding: 16px 32px;
+  background-color: darkgoldenrod;
+  border: 2px rgb(145, 104, 17) solid;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  max-width: 100%;
+  width: 80%;
+  background-color: rgb(226, 171, 33);
+  margin-inline: auto;
+  margin-top: 2rem;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flex>* {
+  flex: 1 1 145px;
+}
+
+input {
+  margin-bottom: 0.75em;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.main-btn {
+  padding: 4px;
+  font-size: 14px;
+  background-color: rgb(236, 233, 45);
+  border-radius: 10px;
+}
