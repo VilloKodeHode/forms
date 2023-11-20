@@ -7,17 +7,21 @@ legend {
   padding: 16px 32px;
   background-color: darkgoldenrod;
   border: 2px rgb(145, 104, 17) solid;
+  color: white;
+  font-weight: bold;
 }
 
 fieldset {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   border-radius: 10px;
-  max-width: 100%;
+  max-width: 600px;
   width: 80%;
   background-color: rgb(226, 171, 33);
-  margin-inline: auto;
-  margin-top: 2rem;
+  margin: 2rem auto;
+  padding: 20px;
 }
 
 .checkbox {
@@ -34,20 +38,38 @@ fieldset {
 }
 
 .flex>* {
-  flex: 1 1 145px;
+  flex: 1 1 100%;
 }
 
-input {
-  margin-bottom: 0.75em;
-  text-align: center;
-  padding: 8px;
+.form-group {
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
   font-size: 14px;
-  border-radius: 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(145, 104, 17);
 }
 
 .main-btn {
-  padding: 4px;
-  font-size: 14px;
+  padding: 10px;
+  font-size: 16px;
   background-color: rgb(236, 233, 45);
-  border-radius: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.main-btn:hover {
+  background-color: rgb(206, 203, 25);
 }
